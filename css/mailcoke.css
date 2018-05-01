@@ -1,30 +1,73 @@
+html,body{
+    padding: 0;
+    margin: 0;
+}
 .wrapper{
 	width: 100%;
-	
+    height: auto;
 }
-header{
-	padding :1em;
-	color : black;
-	background-color : white;
-	opacity: 0.75;
-
+* {
+  box-sizing: border-box;
 }
 
-
-.flex-container {
-  display: flex;
+/* Style the search field */
+form.searchMail input[type=text] {
+  padding: 10px;
+  padding-left: 50px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
 }
 
-.flex-container #himages img{
-	border-radius: 200px;
-    width:225px;
-    height:225px;
+/* Style the submit button */
+form.searchMail button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
 }
 
-.flex-container .avater{
-	margin: 0 50px 0 50px;
+form.searchMail button:hover {
+  background: #0b7dda;
 }
 
-.flex-container .avater figcaption{
-	padding: 20px 0 0 80px;
+/* Clear floats */
+form.searchMail::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.settings{
+    display: flex;
+    float:right;
+}
+.settings div i{
+    margin-left: 10px;
+    font-size: 50px;
+}
+div .fas{
+    font-size:70px;
+}
+.mycontainer .header{
+    margin-top: 20px;
+}
+.dashboard .dasIcon{
+    color:green;
+}
+
+.notification .notif{
+    color:red;
+}
+.searchMail #btnsearch{
+    background-color: green;
+}
+.secondNav{
+    margin-top: 10px;
 }
